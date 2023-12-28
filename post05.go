@@ -48,7 +48,7 @@ func exists(username string) int {
 	db, err := openConnection()
 	if err != nil {
 		fmt.Println(err)
-		return
+		return -1
 	}
 	defer db.Close()
 
